@@ -1,10 +1,9 @@
-import React, { useContext } from 'react';
-import { Container } from "./styles";
 import incomeImg from '../../assets/income.svg';
 import outcomeImg from '../../assets/outcome.svg';
 import totalImg from '../../assets/total.svg';
 import { useTransactions } from '../../hooks/useTransactions';
 import { formatCurrency } from '../../utils';
+import { Container } from "./styles";
 
 export function Summary() {
   const { transactions } = useTransactions();
